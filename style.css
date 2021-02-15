@@ -13,7 +13,7 @@ main {
 }
 .glass {
 	background: white;
-	min-height: 100vh;
+	min-height: 80vh;
 	width: 60%;
 	background: linear-gradient(
 		to right bottom,
@@ -21,6 +21,8 @@ main {
 		rgba(255, 255, 255, 0.3)
 	);
 	border-radius: 2rem;
+	z-index: 2;
+	backdrop-filter: blur(2rem);
 }
 
 .circle1,
@@ -28,7 +30,22 @@ main {
 	background: white;
 	background: linear-gradient(
 		to right bottom,
-		rgba(255, 255, 255, 0.7),
-		rgba(255, 255, 255, 0.3)
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.5)
 	);
+	height: 15rem;
+	width: 15rem;
+	position: absolute;
+	z-index: 5;
+	border-radius: 50%;
+}
+
+.circle1 {
+	top: 3%;
+	right: 15%;
+}
+
+.circle2 {
+	bottom: 3%;
+	left: 15%;
 }
